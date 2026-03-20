@@ -1,0 +1,90 @@
+
+body{
+    background-color: rgb(210, 210, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.layout{
+    background-color: rgb(169, 172, 190);
+    margin:40px 50px;
+    border-radius: 20px;
+    height: 610px;
+    display: flex;
+}
+.sidebar{
+    background-color: white;
+    height: 610px;
+    width: 210px;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+}
+.dashboard-icon{
+    display: inline;
+    height: 25px;
+    width: 25px;
+    float :left;    
+    padding-left: 30px;
+    padding-top: 20px;;    
+}
+#dash{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.menu{
+    display: flex;
+    gap: 25px;              
+    text-decoration: none;
+    padding-bottom: 30px;
+    color: black;
+    padding-left: 30px;
+}
+.menu i {
+    width: 25px;  
+    font-size: 18px;
+}
+
+.menu:hover {
+    background-color: rgb(211, 208, 208);
+    padding: 20px;
+}
+.menu-bar{
+    padding-top: 20px;
+}
+.logout{
+    padding-top: 150px;
+}
+.main-body{
+    margin-left: 20px;
+}
+#head-h2{
+    display: inline-block;
+}
+.user-icon{
+    height: 25px;
+    width: 25px;
+    margin-left: 1080px;
+}
+.courses{
+    display: flex;
+}
+.course{
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 30px;
+    flex:1;
+    text-align: center;
+}
+.icons-course{
+    height: 30px;
+    width: 30px;
+    padding-top: 20px;
+}
+.btn{
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: none;
+}
