@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 219, 219);
+
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d8d0d0;
+    color: black;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar a.active {
+    background-color: #0c0c0c;
+}
+#nav-menus {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+#nav-menus a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+#nav-menus a:hover {
+    background-color: #c0b8b8;
+}
+.sidebar a.active {
+    background-color: #475569;
+}
+
+#nav-menus a i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 240px;
+    
+}
+.header {
+    background-color: #1e293b;
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+.content {
+    display: flex;
+    padding: 10px;
+}   
+
+.card {
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.charts{
+    display: flex;
+}
+
+.container-chart {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    width: 800px;
+}
+
+.products {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+}
+
+#chart-head {
+    display: flex;
+    align-items: center;
+}
+
