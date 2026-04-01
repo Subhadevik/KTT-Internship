@@ -1,0 +1,298 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 219, 219);
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+
+    .container-chart {
+        width: 100%;
+    }
+
+    .products {
+        width: 100%;
+    }
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d8d0d0;
+    color: black;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar a.active {
+    background-color: #0c0c0c;
+}
+#nav-menus {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+#nav-menus a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+#nav-menus a:hover {
+    background-color: #c0b8b8;
+}
+.sidebar a.active {
+    background-color: #475569;
+}
+
+#nav-menus a i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 240px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #1e293b;
+    color: white;
+    padding: 5px 20px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}   
+
+.card {
+    padding: 20px;
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.charts{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.container-chart {
+    background-color: white;
+    padding: 15px;
+    flex: 2;
+    min-width: 0;          
+}
+.container-chart canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.products {
+    background-color: white;
+    padding: 15px;
+    flex: 1;
+    min-width: 0;          
+}
+
+.scrollable-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.product-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+}
+
+#pro-name {
+    font-weight: bold;
+    flex: 1;
+    font-size: 15px;
+}
+
+.product-item span:not(pro-name) {
+    font-size: 13px;
+    color: #666;
+}
+
+#sale {
+    border: 2px solid rgb(239, 236, 236);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.pro-info {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap: 3px;
+}
+
+#bottle-sale {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 2px solid rgb(239, 236, 236);
+}
+
+.table-customer {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.top-customer {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.recent-orders {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    margin: 10px 20px;
+    flex:2;
+}
+
+.table-head {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#viewall {
+    padding: 10px;
+    height: 30px;
+    width: 80px;
+    margin:10px;
+    color: blue;
+    border-radius:10px;
+    background-color: white;
+    border: 2px solid rgb(233, 232, 232);
+    
+}
+
+tbody {
+    border: 2px solid #f0eeee;
+}
+
+th {
+    text-align: left;
+    font-size: 14px;
+    padding: 12px;
+    color: #666;
+}
+
+td {
+    padding: 15px 12px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.prod-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    margin-right:10px;
+    vertical-align: center;
+}
+
+.name {
+    color: blue;
+    font-weight: 500;
+}
+
+.pending {
+    padding: 5px;
+    color: orange;
+    background-color: rgb(252, 252, 194);
+    border-radius: 20px;
+}
+
+.canceled {
+    padding: 5px;
+    color: red;
+    background-color: rgb(254, 169, 169);
+    border-radius: 20px;
+}
+
+.shipped {
+    padding: 5px;
+    color: green;
+    background-color: rgb(207, 250, 207);
+    border-radius: 20px;
+}
+
+.user-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#viewbtn {
+    color: blue;
+    border: 2px solid rgb(239, 236, 236);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
