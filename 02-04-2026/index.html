@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+  <div class = "sidebar">
+            <h2>E-Commerce Dashboard</h2>
+            <ul id = "nav-menus">
+                <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+                <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+                <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+                <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+                <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+                <li><a href="./analytics.html"><i class="fa fa-fw fa-pie-chart"></i>Analytics</a></li>
+                <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+            </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Dashboard</h2>
+        </header>
+
+        <div class="scrollable-content">
+            <div class="content">
+                <div class="card sale">
+                    <h3>Total Sales</h3>
+                    <p>$120,000</p>
+                </div>
+                <div class="card prod">
+                    <h3>Total Products</h3>
+                    <p>1,200</p>
+                </div>
+                <div class="card cust">
+                    <h3>Total Customers</h3>
+                    <p>800</p>
+                </div>
+                <div class="card ord">
+                    <h3>Average Order Value</h3>
+                    <p>$100</p>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class = "container-chart">
+                    <h3>Summary</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+
+                <div class="products">
+                    <h3>Most Selling Products</h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="./images/snicker image.jpg" alt="Snicker Vento" class="product-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Snicker Vento</span>
+                                <span>ID: 244310</span>
+                            </div>
+                            <span id="sale">128 Sales </span>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/bluebackpack.jpeg" alt="Blue Backpack" class="product-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Blue Backpack</span>
+                                <span>ID: 124318</span>
+                            </div>  
+                            <span id="sale">401 Sales</span>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/water-bottle.jpg" alt="Water Bottle" class="product-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Water Bottle</span>
+                                <span>ID: 8441573</span>
+                            </div>
+                            <span id="bottle-sale">1K+ Sales</span>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-customer">
+                <div class="recent-orders">
+                    <div class="table-head">
+                        <h3>Recent Orders</h3>
+                        <button id="viewall">View All</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Customer</th>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="./images/water-bottle.jpg" class="prod-img">Water Bottle</td>
+                                <td class="name">James</td>
+                                <td class="ord-id">#8441573</td>
+                                <td>27 feb 2026</td>
+                                <td><span class="status pending">&bull; Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/iphone 16 pro.webp" class="prod-img">Iphone 16 Pro</td>
+                                <td class="name">Michael</td>
+                                <td class="ord-id">#2456892</td>
+                                <td>26 feb 2026</td>
+                                <td><span class="status canceled">&bull; Canceled</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/headphone.webp" class="prod-img">Headphone</td>
+                                <td class="name">Mary</td>
+                                <td class="ord-id">#1025678</td>
+                                <td>21 feb 2026</td>
+                                <td><span class="status shipped">&bull; Shipped</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="top-customer">
+                    <h3>Weekly Top Customers</h3>
+                    <div class="customer-list">
+                        <div class="product-item">
+                            <img src="./images/profile icon.png" alt="Snicker Vento" class="user-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Jhony Peters</span>
+                                <span><span style="font-weight: bold;">25</span> Orders</span>
+                            </div>
+                            <span id="viewbtn">View </span>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/profile icon.png" alt="Blue Backpack" class="user-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Michel Datta</span>
+                                <span><span style="font-weight: bold;">15</span> Orders</span>
+                            </div>  
+                            <span id="viewbtn">View</span>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/profile icon.png" alt="Water Bottle" class="user-image">
+                            <div class="pro-info">
+                                <span id="pro-name">Peterson Jack</span>
+                                <span><span style="font-weight: bold">23</span> Orders</span>
+                            </div>
+                            <span id="viewbtn">View</span>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html> 
