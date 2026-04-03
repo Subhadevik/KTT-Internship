@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <h2>E-Commerce Dashboard</h2>
+        <ul id = "nav-menus">
+                <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+                <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+                <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+                <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+                <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+                <li><a href="./analytics.html"><i class="fa fa-fw fa-pie-chart"></i>Analytics</a></li>
+                <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Product Management</h2>
+            <div class="header-actions">
+                <input type="text" placeholder="Search products..." class="search-bar">
+                <button class="add-product-btn"><i class="fa fa-plus"></i> Add Product</button> 
+            </div>
+        </header>
+        
+        <div class="category-stock">
+            <div class="category-filters">
+                <span class="label-text">Category:</span>
+
+                <input type="radio" name="cat" id="all" checked>
+                <label for="all">All</label>
+
+                <input type="radio" name="cat" id="electronics">
+                <label for="electronics">Electronics</label>
+
+                <input type="radio" name="cat" id="clothing">
+                <label for="clothing">Clothing</label>
+
+                <input type="radio" name="cat" id="home">
+                <label for="home">Accessories</label>
+
+                <input type="radio" name="cat" id="books">
+                <label for="books">Books</label>
+            </div>
+
+            <div class="stock-status">
+                <span class="label-text">Stock Status:</span>    
+                
+                <input type="radio" name="stock" id="all-stock" checked>
+                <label for="all-stock">All</label>
+                
+                <input type="radio" name="stock" id="in-stock">
+                <label for="in-stock">In Stock</label>
+
+                <input type="radio" name="stock" id="out-stock">
+                <label for="out-stock">Out of Stock</label>
+
+                <input type="radio" name="stock" id="low-stock">
+                <label for="low-stock">Low Stock</label>                
+            </div>
+        </div>
+
+        <div class="scrollable-content">
+            <div class="content">
+                <div class="card sale">
+                    <h3>Total Products</h3>
+                    <p>248</p>
+                </div>
+                <div class="card prod">
+                    <h3>Low Stock</h3>
+                    <p>12</p>
+                </div>
+                <div class="card cust">
+                    <h3>Out of Stock</h3>
+                    <p>5</p>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/snicker image.jpg"></div>
+                        
+                        <p class="card-name">Speed Force : Knit</p>
+                        <p class="card-category">Accessories &bull; Shoes</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$89.00</span>
+                            <span class="badge instock">In Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/bluebackpack.jpeg"></div>
+                        
+                        <p class="card-name">Assorted Cross Bag</p>
+                        <p class="card-category">Accessories &bull; Bags</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$99.00</span>
+                            <span class="badge instock">In Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/headphone.webp"></div>
+                        
+                        <p class="card-name">Headphones</p>
+                        <p class="card-category">Electronics &bull; Headphone</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$119.00</span>
+                            <span class="badge lowstock">Low Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/iphone 16 pro.webp"></div>
+                        
+                        <p class="card-name">Iphone 16 Pro</p>
+                        <p class="card-category">Electronics &bull; Mobiles</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$999.00</span>
+                            <span class="badge outofstock">Out Of Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/water-bottle.jpg"></div>
+                        
+                        <p class="card-name">Water Bottle</p>
+                        <p class="card-category">Accessories &bull; bottles</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$19.00</span>
+                            <span class="badge instock">In Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/coffee maker.webp"></div>
+                        
+                        <p class="card-name">Coffee Maker</p>
+                        <p class="card-category">Electronics &bull; Coffee maker</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$159.00</span>
+                            <span class="badge instock">In Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/jean.jpeg"></div>
+                        
+                        <p class="card-name">Slim Tapered Fit Jeans</p>
+                        <p class="card-category">Clothing &bull; Jeans</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$59.00</span>
+                            <span class="badge outofstock">Out Of Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+                <div class="product-card">
+                        <div class="card-img"><img src="./images/shoe2.jpeg"></div>
+                        
+                        <p class="card-name">Speed Force : Shoe</p>
+                        <p class="card-category">Accessories &bull; Shoes</p>
+                        
+                        <div class="card-row">
+                            <span class="price">$89.00</span>
+                            <span class="badge lowstock">Low Stock</span>
+                        </div>
+                        
+                        <div class="edit-row">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+</body>
+</html>

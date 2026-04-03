@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <h2>E-Commerce Dashboard</h2>
+        <ul id = "nav-menus">
+            <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+            <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+            <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+            <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+            <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+            <li><a href="./analytics.html"><i class="fa fa-fw fa-pie-chart"></i>Analytics</a></li>
+            <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Customer Management</h2>
+            <div class="header-actions">
+                <input type="text" placeholder="Search products..." class="search-bar">
+            </div>
+        </header>
+
+        <div class="scrollable-content">
+            <div class="content">
+                <div class="order-details">
+                    <h3>Total Customers</h3>
+                    <p>12,350</p>
+                </div>
+                <div class="order-details">
+                    <h3>New This Month</h3>
+                    <p style="color:green">+345</p>
+                </div>
+                <div class="order-details">
+                    <h3>Active Customers</h3>
+                    <p style="color:blue">8456</p>
+                </div>
+                <div class="order-details">
+                    <h3>Avg.Lifetime Value</h3>
+                    <p>$432.50</p>
+                </div>
+            </div>
+
+            <div class="customer-cards">
+                <div class="customer-card-title">
+                    <h3>Customer Dictionary</h3>
+                    <span style="color: grey;">Manage your customer relationships</span>
+                    <button class="add-customer-btn"><i class="fa fa-user-plus"></i> Add Customer</button>
+                </div>
+
+                <div class="customer-search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search Customers..." class="customer-search-bar">
+                </div>
+
+                <div class="customer-info">
+                    <div class="cus-info-card">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

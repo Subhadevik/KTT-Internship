@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div class = "sidebar">
+            <h2>E-Commerce Dashboard</h2>
+            <ul id = "nav-menus">
+                <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+                <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+                <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+                <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+                <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+                <li><a href="./analytics.html"><i class="fa fa-fw fa-pie-chart"></i>Analytics</a></li>                <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header class="header">
+                <h2>Order Management</h2>
+                <div class="header-actions">
+                    <input type="text" placeholder="Search products..." class="search-bar">
+                </div>
+            </header>
+            
+            <div class="scrollable-content">
+                <div class="content">
+                    <div class="order-details">
+                        <h3>Total Orders</h3>
+                        <p>2350</p>
+                    </div>
+                    <div class="order-details">
+                        <h3>Pending</h3>
+                        <p style="color:orange">45</p>
+                    </div>
+                    <div class="order-details">
+                        <h3>Processing</h3>
+                        <p style="color:blue">123</p>
+                    </div>
+                    <div class="order-details">
+                        <h3>Delivered</h3>
+                        <p style="color: rgb(46, 245, 46);">2182</p>
+                    </div>
+                </div>
+
+                <div class="order-table-orders">
+                    <div class="table-title">
+                        <h3>Order Management</h3>
+                        <span style="color: grey;">View and manage all customer orders</span>
+                        <button class="export-btn"><i class="fa fa-download"></i> Export</button>
+                    </div>
+                    
+                    <br>
+
+                    <div class="search-filter">
+                        <div class="order-search">
+                            <i class="fa fa-search"></i>
+                            <input type="text" placeholder="Search orders..." class="order-search-bar">
+                        </div>
+                        
+
+                        <div class="filters">
+                            <i class="fa fa-filter"></i>
+                            <select class="order-filter">
+                                <option value="">All Status</option>
+                                <option value="pending">Pending</option>
+                                <option value="processing">Processing</option>
+                                <option value="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="order-table-list">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Items</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="ord-id">ORD-2026-001</td>
+                                    <td>John Doe</td>
+                                    <td id="ord-date">2026-01-15</td>
+                                    <td>3</td>
+                                    <td>$250.00</td>
+                                    <td><span class="ord-status ord-delivered">delivered</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-002</td>
+                                    <td>Jane Smith</td>
+                                    <td id="ord-date">2026-01-14</td>
+                                    <td>1</td>
+                                    <td>$150.00</td>
+                                    <td><span class="ord-status ord-shipped">shipped</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-003</td>
+                                    <td>Bob Johnson</td>
+                                    <td id="ord-date">2026-01-14</td>
+                                    <td>5</td>
+                                    <td>$350.00</td>
+                                    <td><span class="ord-status ord-processing">processing</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-004</td>
+                                    <td>Alice Brown</td>
+                                    <td id="ord-date">2026-01-13</td>
+                                    <td>2</td>
+                                    <td>$450.00</td>
+                                    <td><span class="ord-status ord-delivered">delivered</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-005</td>
+                                    <td>Charlie Wilson</td>
+                                    <td id="ord-date">2026-01-13</td>
+                                    <td>1</td>
+                                    <td>$125.00</td>
+                                    <td><span class="ord-status ord-pending">pending</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-006</td>
+                                    <td>Diana Ross</td>
+                                    <td id="ord-date">2026-01-12</td>
+                                    <td>2</td>
+                                    <td>$89.99</td>
+                                    <td><span class="ord-status ord-delivered">delivered</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-007</td>
+                                    <td>Edward King</td>
+                                    <td id="ord-date">2026-01-12</td>
+                                    <td>4</td>
+                                    <td>$299.00</td>
+                                    <td><span class="ord-status ord-shipped">shipped</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="ord-id">ORD-2026-008</td>
+                                    <td>Fiona Green</td>
+                                    <td id="ord-date">2026-01-11</td>
+                                    <td>3</td>
+                                    <td>$175.50</td>
+                                    <td><span class="ord-status ord-cancelled">cancelled</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
