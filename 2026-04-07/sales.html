@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <h2>E-Commerce Dashboard</h2>
+        <ul id = "nav-menus">
+            <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+            <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+            <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+            <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+            <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+            <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Sales Analytics</h2>
+            <div class="header-actions">
+                <div class="select-box">
+                    <input type="radio" name="period" id="today" checked>
+                    <label for="today">Today</label>
+
+                    <input type="radio" name="period" id="week">
+                    <label for="week">Weekly</label>
+
+                    <input type="radio" name="period" id="month">
+                    <label for="month">Monthly</label>
+
+                    <input type="radio" name="period" id="year">
+                    <label for="year">Yearly</label>
+                </div>
+            </div>
+        </header>
+
+        <div class="scrollable-content">
+            <div class="content">
+                <div class="card">
+                    <h3 style="font-weight: lighter;">Total Sales</h3>
+                    <p class="value" style="font-weight: bolder; font-size: 20px;">$12,345</p>
+                    <p class="change positive">+5.2% from last period</p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: lighter;">Average Order Value</h3>
+                    <p class="value" style="font-weight: bolder; font-size: 20px;">$45.67</p>
+                    <p class="change negative">-3.1% from last period</p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: lighter;">Number of Orders</h3>
+                    <p class="value" style="font-weight: bolder; font-size: 20px;">270</p>
+                    <p class="change positive">+8.4% from last period</p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: lighter;">Conversion Rate</h3>
+                    <p class="value" style="font-weight: bolder; font-size: 20px;">2.5%</p>
+                    <p class="change negative">-0.5% from last period</p>
+                </div>
+            </div>
+
+            <div class="section-charts">
+                <div class="container-chart sales">
+                    <h3>Sales Over Time</h3>
+                    <canvas id="salesOverTimeChart" class="sale-chart"></canvas>
+                </div>
+
+                <div class="container-chart sales">
+                    <h3>Sales by Category</h3>
+                    <canvas id="salesByCategoryChart" class="sale-chart"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html>

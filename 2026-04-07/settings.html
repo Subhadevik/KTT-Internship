@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <h2>E-Commerce Dashboard</h2>
+        <ul id = "nav-menus">
+            <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+            <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+            <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+            <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+            <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+            <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Settings</h2>
+        </header>
+
+        <div class="scrollable-content">
+            <div class="content-settings">
+                <div class="settings-section">
+                    <h3>Profile Settings</h3>
+                    <p>Manage your profile information, change password, and update contact details.</p>
+
+                    <div class="profile-picture">
+                        <img src="profile-placeholder.png" alt="Profile Picture" id="pro-pic">
+                        <button class="change-pic-btn">Change Picture</button>
+                    </div>
+
+                    <form class="settings-form">
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter new password">
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Notification Settings</h3>
+                    <p>Configure your notification preferences for sales updates, order alerts, and more.</p>
+
+                    <form class="settings-form">
+                        <label>
+                            <input type="checkbox" name="sales-updates" checked>
+                            Sales Updates
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="order-alerts">
+                            Order Alerts
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="product-reviews" checked>
+                            Product Reviews
+                        </label>
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Account Settings</h3>
+                    <p>Manage your account settings, including subscription plans, billing information, and security options.</p>
+                    <form class="settings-form">
+                        <label for="subscription">Subscription Plan:</label>
+                        <select id="subscription" name="subscription">
+                            <option value="free">Free</option>
+                            <option value="pro" selected>Pro</option>
+                            <option value="enterprise">Enterprise</option>
+                        </select>
+
+                        <label for="billing">Billing Information:</label>
+                        <input type="text" id="billing" name="billing" placeholder="Enter billing details">
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+
+</body>
+</html>

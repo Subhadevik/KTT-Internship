@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <h2>E-Commerce Dashboard</h2>
+        <ul id = "nav-menus">
+            <li><a href="./index.html"><i class="fa fa-fw fa-th-large"></i>Dashboard</a></li>
+            <li><a href="./sales.html"><i class="fa fa-fw fa-line-chart"></i>Sales</a></li>
+            <li><a href="./products.html"><i class="fa fa-fw fa-cube"></i>Products</a></li>
+            <li><a href="./orders.html"><i class="fa fa-fw fa-list-ul"></i>Orders</a></li>
+            <li><a href="./customers.html"><i class="fa fa-fw fa-address-book-o"></i>Customers</a></li>
+            <li><a href="./settings.html"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h2>Customer Management</h2>
+            <div class="header-actions">
+                <input type="text" placeholder="Search products..." class="search-bar">
+            </div>
+        </header>
+
+        <div class="scrollable-content">
+            <div class="content">
+                <div class="order-details">
+                    <h3>Total Customers</h3>
+                    <p>12,350</p>
+                </div>
+                <div class="order-details">
+                    <h3>New This Month</h3>
+                    <p style="color:green">+345</p>
+                </div>
+                <div class="order-details">
+                    <h3>Active Customers</h3>
+                    <p style="color:blue">8456</p>
+                </div>
+                <div class="order-details">
+                    <h3>Avg.Lifetime Value</h3>
+                    <p>$432.50</p>
+                </div>
+            </div>
+
+            <div class="customer-cards">
+                <div class="customer-card-title">
+                    <h3>Customer Details</h3>
+                    <span style="color: grey;">Manage your customer relationships</span>
+                    <button class="add-customer-btn"><i class="fa fa-user-plus"></i> Add Customer</button>
+                </div>
+
+                <div class="customer-search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search Customers..." class="customer-search-bar">
+                </div>
+
+                <div class="customer-info">
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">JD</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">John Doe</h3>
+                                <span class="customer-email">john@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">24</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$2,450.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-15</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">JS</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Jane Smith</h3>
+                                <span class="customer-email">jane@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">19</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$1,950.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-14</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">BJ</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Bob Johnson</h3>
+                                <span class="customer-email">bob@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">32</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$4,150.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-14</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">AB</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Alice Brown</h3>
+                                <span class="customer-email">alice@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">21</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$2,100.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-13</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">CW</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Charlie Wilson</h3>
+                                <span class="customer-email">charlie@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">35</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$5,550.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-13</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">DR</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Diana Ross</h3>
+                                <span class="customer-email">diana@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">14</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$1,450.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-12</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">EK</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Evelyn King</h3>
+                                <span class="customer-email">evelyn@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">41</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$9,850.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-12</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cus-info-card"> 
+                        <div class="customer-menu">...</div>
+                        <div class="customer-card-header">
+                            <div class="customer-avatar">FG</div>
+                            <div class="customer-info-details">
+                                <h3 class="customer-name">Frank Garcia</h3>
+                                <span class="customer-email">frank@example.com</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer-divider"></div>
+
+                        <div class="customer-stats">
+                            <div class="customer-stat">
+                                <span class="stat-label">Orders</span>
+                                <span class="stat-value">22</span>
+                            </div>
+                            <div class="customer-stat">
+                                <span class="stat-label">Total Spent</span>
+                                <span class="stat-value">$2,124.00</span>
+                            </div>
+                        </div>
+
+                        <div class="customer-footer">
+                            <span class="last-order">Last order: 2026-01-11</span>
+                            <button class="contact-btn">
+                                <i class="fa fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./customer.js"></script>
+</body>
+</html>
